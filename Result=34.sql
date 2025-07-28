@@ -1,0 +1,6 @@
+USE university_management;
+
+SELECT DISTINCT GPA FROM student s1
+WHERE 3 >=(SELECT COUNT(DISTINCT GPA) FROM student s2
+WHERE S1.GPA >=S2.GPA)
+ORDER BY s1.GPA DESC;

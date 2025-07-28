@@ -1,0 +1,6 @@
+USE university_management;
+
+SELECT MAJOR, COUNT(MAJOR)
+AS ALL_MAJOR FROM student 
+GROUP BY MAJOR;
+
